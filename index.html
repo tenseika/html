@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blogstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Alex's Page</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav class="navbar-list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="home-page">
+            <div class="home-container">
+                <div class="title-container">
+                    <h1>Greetings!</h1>
+                    <h3>Saya Alexandrio Maleteng, Mahasiswa Universitas Sam Ratulangi, Teknik Informatika</h3>
+                </div>
+                <div class="greetings-image">
+                    <img src="assets/images/download.jpeg" alt="">
+                </div>
+            </div>
+        </section>  
     </header>
 
     <main>
-        <section id="home">
-            <h1>Greetings!</h1>
-            <p>Saya Alexandrio Maleteng, Mahasiswa Universitas Sam Ratulangi, Teknik Informatika</p>
+        <section id="gallery" class="gallery-page">
+            <div class="gallery-text">
+                <h1>Gallery</h1>
+            </div>
+            <div class="photo-container">
+                <div class="gallery-item">
+                    <div>
+                        <img src="assets/images/download.jpeg" alt="Lewis Hamilton">
+                        <p>alex hamillton</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <img src="assets/images/seb.jpeg" alt="Lewis Hamilton">
+                        <p>alex hamillton</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <img src="assets/images/michael schumacher.jpeg" alt="Lewis Hamilton">
+                        <p>alex hamillton</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="gallery">
-            <h1>Gallery</h1>
-                <img src="assets/images/download.jpeg" alt="Lewis Hamilton" width="350">
-                <img src="assets/images/michael schumacher.jpeg" alt="Michael Schumacher" width="350">
-                <img src="assets/images/seb.jpeg" alt="Sebastian Vettel" width="350">
-        </section>
 
-        <section id="blog">
+        <section id="blog" class="blog__page blog__container">
             <h1>Blog</h1>
             <article>
                 <h2>Memahami Salah Satu Perebutan Gelar Paling Kacau dan Kontroversial Dalam Sejarah F1</h2>
-                <p>Banyak sejarah gelap dalam F1 termasuk perebutan gelar pada tahun 2021 antara Lewis Hamilton dan Max Verstappen di Abu Dhabi GP</p>
-                <a href="https://www.formula1.com/en/latest/article/explained-understanding-one-of-the-most-chaotic-controversial-title.4B98awxwP7JPgBWxIt5KnL">Informasi Selengkapnya</a>
+                <p>Banyak sejarah gelap dalam F1 termasuk perebutan gelar pada tahun 2021 antara Lewis Hamilton dan
+                    Max Verstappen di Abu Dhabi GP</p>
+                <a
+                    href="https://www.formula1.com/en/latest/article/explained-understanding-one-of-the-most-chaotic-controversial-title.4B98awxwP7JPgBWxIt5KnL">Informasi
+                    Selengkapnya</a>
             </article>
             <article>
                 <h2>Momen Terbaik Sebastian Vettel</h2>
-                <p>Mengingat salah satu pembalap F1 yang ikonik, melihat perjalanannya dari awal masuk F1, menjadi juara dunia sampai dia pensiun</p>
-                <a href="https://www.dive-bomb.com/post/remembering-these-days-sebastian-vettel-s-best-moments">Informasi Selengkapnya</a>
+                <p>Mengingat salah satu pembalap F1 yang ikonik, melihat perjalanannya dari awal masuk F1, menjadi
+                    juara dunia sampai dia pensiun</p>
+                <a href="https://www.dive-bomb.com/post/remembering-these-days-sebastian-vettel-s-best-moments">Informasi
+                    Selengkapnya</a>
             </article>
             <article>
                 <h2>10 Pembalap Terbesar Dalam Sejarah F1</h2>
-                <p>F1 adalah puncak olahraga motor yang telah berdiri selama 74 tahun. Mari kita lihat 10 pembalap terbesar dalam sejarah F1 sejak tahun berdirinya di 1950</p>
-                <a href="https://motorsporttickets.com/blog/10-greatest-formula-1-drivers-in-history/">Informasi Selengkapnya</a>
+                <p>F1 adalah puncak olahraga motor yang telah berdiri selama 74 tahun. Mari kita lihat 10 pembalap
+                    terbesar dalam sejarah F1 sejak tahun berdirinya di 1950</p>
+                <a href="https://motorsporttickets.com/blog/10-greatest-formula-1-drivers-in-history/">Informasi
+                    Selengkapnya</a>
             </article>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-page">
             <h1>Contact</h1>
             <p>Email: andrmltng@gmail.com</p>
         </section>
@@ -58,4 +98,5 @@
     <footer>
     </footer>
 </body>
+
 </html>
