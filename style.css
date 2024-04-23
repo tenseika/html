@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -34,6 +39,7 @@ header .navbar .navbar-list ul {
 header .navbar .navbar-list li {
     position: relative;
     list-style-type: none;
+    top: 15px;
 }
 
 header .navbar .navbar-list li a {
@@ -50,6 +56,15 @@ header .navbar  .navbar-list li:hover a {
     background-color: #F4EDDB;
     color: #118877;
 }
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 500px;
+    bottom: 13px;
+}
+
 .greetings-image { 
     display: flex;
     align-items: center;
@@ -72,69 +87,27 @@ header .navbar  .navbar-list li:hover a {
     text-align: left;
     width: 100%;
     padding: 90px;
-    background-color: #000000;
+    background-color: var(--primary-color);
 }
 
 .home-container h1 {
     font-size: 65px;
-    color: #118877;
-    animation: go-right 1s ease-out forwards;
+    color: var(--secondary-color);
     margin: 0 0 8px;
     text-align: left;
-}
-
-
-@keyframes  go-left {
-    0% {
-        transform: translateX(150px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    
-}
-
-@keyframes go-right {
-    0% {
-        transform: translateX(-150px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    
 }
 
 .home-container h3 {
     margin: 0 0 35px;
     font-size: 25px;
-    animation: go-up 1s ease-in-out forwards;
-    color: #f8f8f8;
+    color: var(--secondary-color);
     display:flex ;
     text-align: left;
     width: 500px;
 }
 
-@keyframes go-up {
-    0% {
-        transform: translateY(150px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    
-}
-
-.blog-page{
-    background-color: whitesmoke;
-}
 .gallery-page {
-    background-color: #1c1c1c;
+    background-color: var(--primary-color);
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -147,8 +120,7 @@ header .navbar  .navbar-list li:hover a {
 .gallery-text {
     text-align: center;
     font-size: 50px;
-    color: #ffffff;
-    animation: go-bottom 1s ease-out forwards;
+    color: var(--secondary-color);
 }
 
 .photo-container {
@@ -162,18 +134,6 @@ header .navbar  .navbar-list li:hover a {
 
 .photo-container img {
     width: 200px;
-}
-
-@keyframes go-bottom {
-    0% {
-        transform: translateY(-150px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    
 }
 
 .gallery-item{
@@ -210,7 +170,7 @@ header .navbar  .navbar-list li:hover a {
         padding: 0;
         text-align: center;
         font-style: italic;
-        color: white;
+        color: var(--secondary-color);
       }
     }
   }

@@ -1,0 +1,57 @@
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+.blog_page{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 40px;
+    color: var(--secondary-color);
+    flex-flow: row;
+}
+
+.blog_card {
+    flex: 0 0 300px;
+    margin: 175px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px var(--secondary-color);
+    background-color: var(--primary-color);
+    height: 50vh;
+}
+
+.blog_card img {
+    max-width: 100%;
+}
+
+.blog_card .blog_text {
+    padding: 0 20px 20px;
+    color: var(--secondary-color);
+    text-align: justify;
+}
+
+.contact-page{
+    height: 25vh;
+    background-color: var(--primary-color);
+}
+
+.contact-title {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 80px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-title h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
