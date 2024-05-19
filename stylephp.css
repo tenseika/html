@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+header .navbar{
+    background-color: #118877;
+    width: 100%;
+    max-width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+}
+
+header .navbar .navbar-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: right;
+    gap: 3rem 1rem;
+}
+
+header .navbar .navbar-list li {
+    position: relative;
+    list-style-type: none;
+    top: 15px;
+}
+
+header .navbar .navbar-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F4EDDB;
+    transition: all 0.1s ease-in-out;
+}
+
+header .navbar  .navbar-list li:hover a {
+    background-color: #F4EDDB;
+    color: #118877;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 680px;
+    bottom: 13px;
+}
+
+.greetings-image { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greetings-image img{
+    width: 600px;
+    animation:go-left 1s ease-in forwards;
+    border-radius: 999px;
+}
+
+.home-container {
+    display: flex;
+    height: 100vh;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding: 90px;
+    background-color: var(--primary-color);
+}
+
+.home-container h1 {
+    font-size: 65px;
+    color: var(--secondary-color);
+    margin: 0 0 8px;
+    text-align: left;
+}
+
+.home-container h3 {
+    margin: 0 0 35px;
+    font-size: 25px;
+    color: var(--secondary-color);
+    display:flex ;
+    text-align: left;
+    width: 500px;
+}
+
+.gallery-page {
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 125px;
+    gap: 100px;
+}
+
+.gallery-text {
+    text-align: center;
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.photo-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-left: 15%;
+}
+
+.photo-container img {
+    width: 200px;
+}
+
+.gallery-item{
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+
+    div {
+      width: 200px;
+      margin: 10 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px rgb(255, 255, 255);
+      padding: 2px;
+      box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border-color: rgb(238, 225, 221);
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+        align-items: center;
+      }
+        p{
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+        color: var(--secondary-color);
+      }
+    }
+  }
